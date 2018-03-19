@@ -52,7 +52,7 @@ void Enemy::draw_sprite(sf::RenderWindow* window){
 
 
 
-CactusMan::CactusMan(int seed): Enemy("Enemies/Cactus_man/cactusMan_sheet.png",seed){
+CactusMan::CactusMan(int seed): Enemy("res/Enemies/Cactus_man/cactusMan_sheet.png",seed){
     textureSize= enemy_texture->getSize();
     textureSize .x/=1;
     textureSize.y /=10;
@@ -79,7 +79,7 @@ void CactusMan::animation(){
 
 
 
-Pygmy::Pygmy( int seed): Enemy("Enemies/pygmy_sheet.png",seed){
+Pygmy::Pygmy( int seed): Enemy("res/Enemies/pygmy_sheet.png",seed){
     textureSize= enemy_texture->getSize();
     textureSize.x/=3.85;
     textureSize.y /=1;
@@ -104,7 +104,7 @@ void Pygmy::animation(){
 
 
 
-Cactus:: Cactus(int seed):Enemy("Enemies/Cactus.png",seed){
+Cactus:: Cactus(int seed):Enemy("res/Enemies/Cactus.png",seed){
     enemy_sprite= new sf::RectangleShape(sf::Vector2f(110.0f,145.0f));
     sprite_dimensions=enemy_sprite->getGlobalBounds();
     enemy_sprite->setPosition(x_position,y_position);//x_position,y_position);
@@ -117,7 +117,7 @@ Cactus:: Cactus(int seed):Enemy("Enemies/Cactus.png",seed){
 
 
 
-Peabody::Peabody(int seed): Enemy("Enemies/Peabody_sheet.png",seed){
+Peabody::Peabody(int seed): Enemy("res/Enemies/Peabody_sheet.png",seed){
     textureSize= enemy_texture->getSize();
     textureSize.x/=12;
     textureSize.y /=4;
@@ -142,7 +142,7 @@ void Peabody::animation(){
 
 
 
-Rock::Rock( int seed): Enemy("Enemies/rock2.png",seed){
+Rock::Rock( int seed): Enemy("res/Enemies/rock2.png",seed){
     enemy_sprite= new sf::RectangleShape(sf::Vector2f(120.0f,100.0f));
     enemy_sprite->setTexture(enemy_texture);
     sprite_dimensions=enemy_sprite->getGlobalBounds();

@@ -13,7 +13,7 @@ namespace sprites{
 Car::Car(std::string model){
     car_sprite=new sf::RectangleShape(sf::Vector2f(124.0f,201.0f));
     car_texture= new sf::Texture();
-    if (!car_texture->loadFromFile("Car Images/"+ model)){
+    if (!car_texture->loadFromFile("res/Car Images/"+ model)){
         assert(!car_texture->loadFromFile(model));}
     car_texture->setSmooth(true);
     car_sprite->setTexture(car_texture);

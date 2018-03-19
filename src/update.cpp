@@ -15,7 +15,7 @@ namespace display_update{
     }
     void  draw_message(std::string words, std::string font_type, int Size, sf::Color color, sf::RenderWindow* window,int width, int height){
         sf::Font font;
-        font.loadFromFile("Fonts/"+font_type);
+        font.loadFromFile("res/Fonts/"+font_type);
         sf::Text message;
         message.setFont(font);
         message.setString(words);
