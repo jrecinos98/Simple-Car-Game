@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cassert>
-#include "Game.h"
+#include "../includes/Game.h"
 
 using namespace std;
 

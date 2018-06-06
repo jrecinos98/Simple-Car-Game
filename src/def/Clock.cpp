@@ -1,4 +1,4 @@
-#include "Clock.h"
+#include "../includes/Clock.h"
 #include <cassert>
 
 namespace game_clock{

@@ -1,6 +1,6 @@
 #include <SFML/Graphics.hpp>
 #include <map>
-#include "Collision.h"
+#include "../includes/Collision.h"
 
 namespace Collision
 {

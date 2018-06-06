@@ -1,7 +1,7 @@
 #include <string>
 #include <cassert>
 #include <iostream>
-#include "Game.h"
+#include "../includes/Game.h"
 
 
 
@@ -15,7 +15,7 @@ namespace car_game{
         game_clock::Clock* updateClock= new game_clock::Clock();
         //Sprite objects
         sprites::Car* car=new sprites::Car("LightBlueCar.png");//generates car object;
-        sprites::Background* background= new sprites::Background("res/Background.png");//generates background object
+        sprites::Background* background= new sprites::Background("../res/Background.png");//generates background object
 
         std::vector<Obstacle::Enemy*> Enemies;
         Obstacle::load_enemies(Enemies); //generates enemy objects and stores them in a vector.
